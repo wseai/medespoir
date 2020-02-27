@@ -1,0 +1,21 @@
+<div class="bg">
+    <img src="../../../assets/image/blog.jpg" width="100%" alt="" />
+</div>
+<!-- content -->
+<h1 class="titre">{{ heading }}</h1>
+<div *ngFor="let New of News" class="container">
+    <div class="wow fadeInUp">
+        <div class="row">
+            <div class="col-lg-auto">
+                <img class="N-img" [src]="New.image" />
+            </div>
+            <div class="col-lg">
+                <h6 class="card-title">{{New.title}}</h6>
+                <p class="card-text">{{New.date}}</p>
+                <p class="card-text">{{New.text}}</p>
+            </div>
+        </div>
+    </div>
+</div>
+<br><br>
+<!--| slice:0:10; let i=index"-->

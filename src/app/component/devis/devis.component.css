@@ -1,0 +1,120 @@
+.jumbotron {
+    margin: 0%;
+    width: 100%;
+    height: 98%;
+    border-radius: 0%;
+    background-image: url("../../../assets/image/contact.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.titre {
+    color: #22252a;
+    font-size: 150%;
+    font-weight: 300;
+    letter-spacing: 1px;
+    font-family: helvetica;
+}
+
+.container {
+    padding-top: 150px;
+    padding-right: 25px;
+    padding-left: 25px;
+    padding-bottom: 150px;
+}
+
+.form-row {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+input,
+select,
+textarea {
+    border: none;
+    border-radius: 0%;
+    border-color: #22252a;
+    background-color: #ffffff;
+    transition: 0.5s ease-in-out;
+    border-bottom: 1px solid #22252a;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    border: none;
+    outline: 0 none;
+    border-color: #22252a;
+    transition: 0.5s ease-in-out;
+    border-bottom: 1px solid #22252a;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, .075) inset, 0 0 8px #22252a8d;
+}
+
+button {
+    width: 100%;
+    overflow: hidden;
+    transition: .5s ease-in-out
+}
+
+.btn-dark:hover {
+    background-color: #111;
+    border-color: #111;
+    transition: .5s ease-in-out
+}
+
+.btn-danger:hover {
+    background-color: #920d27;
+    border-color: #920d27;
+    transition: .5s ease-in-out
+}
+
+.rowed {
+    font-family: Helvetica;
+    align-items: center;
+}
+
+.titre {
+    font-size: 180%;
+    font-weight: 600;
+    text-align: center;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.bttn {
+    width: 110%;
+    padding-top: 8px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 8px;
+    font-size: 15px;
+    text-decoration: none;
+    color: #22252a;
+    text-align: center;
+    border-radius: 5px;
+    background-color: #ffffff;
+}
+
+.bttn:hover {
+    color: #22252a;
+    background-color: #dddddd;
+    transition: 0.8s ease-in-out;
+}
+
+.canvas {
+    height: 100%;
+    width: 100%;
+}
+
+.large-screen {
+    margin: 0%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.block {
+    padding: 100px;
+    text-align: center;
+    background-color: #22252a;
+}

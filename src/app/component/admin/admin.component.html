@@ -1,0 +1,17 @@
+<div class="fullscreen">
+    <div class="container">
+        <form [formGroup]="confirmation" novalidate>
+            <h3 class="display-4">Interface {{title}}</h3>
+            <div class="text-center">
+                <input type="password" class="form-input" formControlName="name" placeholder="Cle administration.." ngModel pattern>
+                <input type="submit" routerLink="/cong" class="btn" value="{{ confirmation.status }}" [disabled]="confirmation.invalid">
+            </div>
+            <div *ngIf="confirmation.controls[ 'name'].invalid && (confirmation.controls[ 'name'].dirty || confirmation.controls[ 'name'].touched) " class="alert ">
+                <div class="wow zoomIn">
+                    <div *ngIf="confirmation.controls['name'].errors.required ">Saisir correctement le cle pour acceder</div>
+                    <div *ngIf="confirmation.controls['name'].errors.pattern ">Cle incorrect, Saisir a nouveau</div>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>

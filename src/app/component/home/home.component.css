@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");
+
+/* arrirere plan */
+
+.bg {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    background: linear-gradient(#22252a 10%, #22252a00, #22252a), url(https://images.unsplash.com/photo-1504813184591-01572f98c85f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1000&q=80);
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: "Open Sans", sans-serif;
+}
+
+.bg .container {
+    z-index: 2;
+    position: relative;
+}
+
+.bg .overlay {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+    position: absolute;
+    background-color: #22252a;
+}
+
+#btnbounce {
+    border: none;
+    font-size: 25px;
+    background: none;
+    color: #ffffff;
+}
+
+
+/*********/
+
+.contenu {
+    overflow: hidden;
+    color: #ffffff;
+    background-color: #22252a;
+}
+
+.container-fluid {
+    width: 80%;
+    scroll-behavior: smooth;
+}
+
+.titre {
+    font-size: 180%;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-family: helvetica;
+}
+
+.parag {
+    padding-bottom: 5px;
+    text-align: justify;
+    text-justify: inter-word;
+    font-family: helvetica;
+}
+
+.btn {
+    color: #ffffff;
+    margin-right: 5%;
+    font-family: helvetica;
+    background: none;
+    border: 1px solid #ffffff;
+    transition: 0.5s ease-in-out;
+}
+
+.btn:hover {
+    color: #c82d47;
+    border-radius: 25px;
+    transition: 0.5s ease-in-out;
+    border: 1px solid #c82d47;
+}
+
+#rowv {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.col {
+    float: none;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 25px;
+}
+
+.card-text {
+    padding: 0%;
+    color: #22252a;
+    font-size: 100%;
+    text-align: center;
+    letter-spacing: 1px;
+    text-justify: inter-word;
+    font-family: helvetica;
+}
+
+.card-img-top {
+    height: 200px;
+}
+
+.hero {
+    color: #22252a;
+    font-size: 180%;
+    font-weight: 600;
+    text-align: center;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-family: helvetica;
+}
+
+.lead {
+    color: #22252a;
+    font-size: 110%;
+    text-align: center;
+    font-family: helvetica;
+}
+
+.btn-dark {
+    padding-top: 3px;
+    padding-left: 10px;
+    padding-bottom: 3px;
+    padding-right: 10px;
+    border-radius: 5px;
+    font-family: helvetica;
+}
+
+.centered-text {
+    text-align: center;
+    padding-top: 100px !important;
+    padding-left: 25px;
+    padding-right: 25px;
+}

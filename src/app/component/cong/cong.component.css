@@ -1,0 +1,17 @@
+.fa-trash {
+    font-size: 20px;
+}
+
+.fa-trash:hover {
+    color: crimson;
+    transition: 0.5s ease-in-out;
+}
+
+.btn-dark {
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.container {
+    float: left;
+}

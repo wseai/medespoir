@@ -1,0 +1,81 @@
+<!-- arriere plan -->
+<div class="bg">
+    <img src="../../../assets/image/devis2.jpg" width="100%" alt="" />
+</div>
+
+<!-- contenu de la page -->
+<div class="contenu">
+    <br />
+    <br />
+    <br />
+    <div class="container-fluid">
+        <div class="row">
+            <!-- premier bloc -->
+            <div class="col-lg">
+                <div class="wow fadeIn">
+                    <iframe width="100%" height="362" src="https://www.youtube.com/embed/XaTfurE_BmM"></iframe>
+                </div>
+            </div>
+            <div class="col-lg">
+                <div class="wow fadeIn">
+                    <p class="titre">
+                        Reportage sur Medespoir :<br />France 3, NRJ 12, Star 24
+                    </p>
+                    <hr style="width: 70%;" />
+                    <p class="parag">
+                        Dans cette vidéo issue d’un reportage de l'émission 360 degree, découvrez <b>Zero Complexe</b> une serie televisionique sur la chirurgie en tunisie ou <b> MedEspoir </b> vous presentre le séjour des ses patients
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- deuxieme bloc -->
+<br />
+<div class="wow fadeIn">
+    <hr />
+    <p class="titre" style="text-align: center;">
+        medespoir<br /> a la television
+    </p>
+</div>
+<!-- troisieme bloc -->
+<div class="wow fadeIn">
+    <div class="accordion" id="accordionExample">
+        <div class="card">
+            <div class="text-center" id="headingOne">
+                <button class="btn btn" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+          saison 1
+        </button>
+            </div>
+            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                <div class="card-body">
+                    <div class="row justify-content-md-center">
+                        <div class="col-md-auto" *ngFor="let video of videos | slice: 0:10">
+                            <iframe class="wow fadeInUp" width="460" height="260" [src]="video.lien | sanitizer">
+              </iframe>
+                            <p class="wow fadeInUp">{{video.titre}}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="text-center" id="headingTwo">
+                <button class="btn btn collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+          saison 2
+        </button>
+            </div>
+            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                <div class="card-body">
+                    <div class="row justify-content-md-center">
+                        <div class="col-md-auto" *ngFor="let video of videos | slice: 10:end">
+                            <iframe class="wow fadeInUp" width="460" height="260" [src]="video.lien | sanitizer">
+              </iframe>
+                            <p class="wow fadeInUp">{{video.titre}}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

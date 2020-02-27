@@ -1,0 +1,48 @@
+<!-- arriere plan -->
+<div class="bg">
+    <img src="../../../assets/image/media1.jpg" width="100%" alt="" />
+</div>
+<!-- contenu de la page -->
+<br><br>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-lg">
+            <div class="wow fadeIn">
+                <p class="titre">
+                    Chirurgie esthetique Tunisie : <br />les stars parlent de Medespoir
+                </p>
+                <hr style="width: 70%;" />
+                <p class="parag">
+                    Smaïl le héros de la <b>Télé Réalité</b> La Villa des cœurs brisés nous détaille son blanchiment dentaire avec Medespoir en Tunisie. Son
+                    <a routerLink="/temo">avis sur le séjour médical</a> bien détaillé dans cette vidéo. Les stars de
+                    <b>telerealité</b> ont fait de Medespoir leur partenaire de confiance pour réaliser leur
+                    <b>chirurgie esthetique</b>, Medespoir le pionnier du tourisme médical en Tunisie et en Afrique.
+                    <b>Chirurgie esthetique Tunisie Télé Réalité</b> : des secrets à dévoiler dans les videos ci-dessous.
+                </p>
+            </div>
+        </div>
+        <div class="col-lg">
+            <div class="wow fadeIn">
+                <iframe width="100%" height="362" src="https://www.youtube.com/embed/nI00keuXlyc">
+              </iframe>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- section -->
+
+<div class="wow fadeIn">
+    <hr />
+    <p class="titre" style="text-align: center;">
+        stars de telerealite <br> a la television
+    </p>
+</div>
+
+
+<!-- video -->
+
+<div id="row" class="row justify-content-md-center">
+    <div class="col-md-auto" *ngFor="let video of videos">
+        <iframe class="wow fadeInUp" width="460" height="260" [src]="video.lien | sanitizer"></iframe>
+    </div>
+</div>

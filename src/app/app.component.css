@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:600&display=swap');
+nav {
+    z-index: 1;
+    width: 100%;
+    clear: both;
+    opacity: 0.9;
+    position: fixed;
+    text-align: center;
+    background-color: #22252a !important;
+}
+
+.top-header {
+    opacity: 0.9;
+    overflow: hidden;
+    text-align: center;
+    background-color: #22252a;
+}
+
+.navbar-nav {
+    top: 0%;
+    position: sticky;
+    position: -webkit-sticky;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.navbar-toggler {
+    border-color: #ffffff;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(256, 256, 256, 256)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.nav-item {
+    font-size: 90%;
+    letter-spacing: 1px;
+    color: #ffffff !important;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.nav-item:hover {
+    transition: 0.8s;
+    color: #c82d47 !important;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+}
+
+.nav-item.active {
+    color: #c82d47 !important;
+}
+
+.logo {
+    margin-top: -1%;
+    position: relative;
+    font-size: 18px;
+}
+
+.fa-user-cog:hover {
+    color: #c82d47 !important;
+    transition: 0.5s ease-in-out;
+}
+
+
+/* footer */
+
+footer {
+    background-color: #22252a;
+    color: #ffffff;
+}
+
+.fa,
+a,
+ul {
+    padding-top: 10px;
+    color: #ffffff;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.fa:hover,
+a:hover {
+    color: #c82d47;
+    transition: 0.5s;
+}
+
+hr {
+    background-color: #3a3d42;
+}
+
+#outro {
+    padding-left: 100px;
+}
+
+.listgroup {
+    display: flex;
+    list-style: none;
+    place-content: center;
+    margin-right: 51%;
+    margin-left: 51%;
+}
+
+#list-li {
+    padding-right: 30px;
+    font-size: 25px;
+}
+
+
+/**** icons hover ****/
+
+#facebook :hover {
+    color: #0074d9;
+}
+
+#instagram:hover {
+    background: -webkit-linear-gradient(#FF4136, #F012BE);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#twitter:hover {
+    color: rgb(58, 161, 202);
+}
+
+#youtube:hover {
+    color: rgb(255, 13, 0);
+}

@@ -1,0 +1,283 @@
+<!-- arriere plan -->
+<div class="bg">
+    <div class="overlay"></div>
+    <div class="container h-100">
+        <div class="d-flex h-100 text-center align-items-center">
+            <div class="w-100 text-white">
+                <h1 class="display-3">MedEspoir Tv</h1>
+                <button id="btnbounce" class="animated bounce infinite">
+          <i class="fa fa-angle-double-down"></i>
+        </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- contenu de la page -->
+
+<div class="contenu">
+    <br />
+    <br />
+    <br />
+    <div class="container-fluid">
+        <div class="row">
+            <!-- premier bloc -->
+            <div class="col-lg">
+                <div class="wow fadeInUp">
+                    <p class="titre">avis sur medespoir:</p>
+                    <ol>
+                        <li class="parag">
+                            <b>Medespoir TV</b>, c'est la chaine TV des
+                            <b>avis vidéo de Medespoir</b> et Clinique Medespoir.
+                            <b>Medespoir avis négatif</b> ? Des gens vous disent cela, n'en croyez rien. Les avis de nos patients sur Medespoir sont positifs et les avis des stars de la télévision sont également positifs
+                        </li>
+                        <li class="parag">
+                            Des émissions TV sur la chirurgie esthetique Tunisie diffusées sur
+                            <b>TF1</b> ou <b>NRJ 12</b>.Des émissions avec les stars de téléréalité qui ont choisi
+                        </li>
+                        <li class="parag">
+                            Les meilleurs avis sont les avis de personnes que vous voyez en vidéo. Sur Medespoir.TV, vous pourrez voir et écouter des
+                            <b>avis en vidéo</b> pour la prise en charge de nos équipes avant, pendant et après les interventions.
+                        </li>
+                    </ol>
+                    <div style="padding : 25px 0px;">
+                        <a routerLink="/media" class="btn">Voir plus sure media TV</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg">
+                <div class="wow fadeInUp">
+                    <video controls autoplay muted loop height="100%" width="100%">
+            <source src="../../../assets/image/vbg.mp4" type="video/mp4" />
+          </video>
+                </div>
+                <br><br>
+            </div>
+            <!-- deuxieme bloc -->
+            <div class="w-100">
+                <br />
+                <div class="wow fadeInUp">
+                    <p class="titre" style="text-align: center;">medespoir a la tele</p>
+                    <div id="rowv" class="row justify-content-md-center">
+                        <div class="col-sm-auto" *ngFor="let video of videos | slice:0:3">
+                            <iframe width="400" height="200" [src]="video.lien | sanitizer"></iframe>
+                        </div>
+                    </div>
+                </div>
+                <br><br>
+            </div>
+            <!-- troisieme bloc -->
+            <div class="col-lg">
+                <div class="wow fadeInUp">
+                    <iframe width="100%" height="362" src="https://www.youtube.com/embed/NpXoIVtrUE0"></iframe>
+                </div>
+            </div>
+            <div class="col-lg">
+                <div class="wow fadeInUp">
+                    <p class="titre">Temoignage patients</p>
+                    <p class="parag">
+                        Liposuccion, augmentation mammaire, rhinoplastie et bien d'autres interventions de chirurgie esthétique encore. Regardez des
+                        <u>témoignages de patients en vidéo</u> qui ont demandé à Medespoir la prise en charge de leurs interventions. Seul, en couple, ces personnes parlent de leur projet esthétique, de la manière dont elles ont connu la Clinique Medespoir
+                        (souvent grâce aux émissions à la télévision française) et de leur prise en charge pendant leur séjour médical en Tunisie.
+                    </p>
+                    <p class="parag">
+                        Des vidéos où vous pourrez voir également nos patients avant et après leurs interventions à la clinique.
+                    </p>
+                    <div style="padding : 25px 0px;">
+                        <a routerLink="/temo" class="btn">Voir plus sure media TV</a>
+                    </div>
+                    <br>
+                </div>
+                <br>
+            </div>
+            <!-- quatrieme block -->
+            <div class="w-100">
+                <br>
+                <!-- carousel auto -->
+                <div class="wow fadeInUp">
+                    <div id="carouselExampleInterval" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner" data-ineterval="">
+                            <div class="carousel-item active">
+                                <img src="../../../assets/image/carousel/car1.jpg" class="d-block w-100" alt="..." />
+                            </div>
+                            <div class="carousel-item">
+                                <img src="../../../assets/image/carousel/car2.jpg" class="d-block w-100" alt="..." />
+                            </div>
+                            <div class="carousel-item">
+                                <img src="../../../assets/image/carousel/car3.jpg" class="d-block w-100" alt="..." />
+                            </div>
+                            <div class="carousel-item">
+                                <img src="../../../assets/image/carousel/car4.jpg" class="d-block w-100" alt="..." />
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#carouselExampleInterval" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselExampleInterval" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                    <br>
+                </div>
+                <br>
+            </div>
+            <!-- cinquieme bloc -->
+            <div class="col-lg">
+                <br>
+                <div class="wow fadeInUp">
+                    <p class="titre">stars telerealite</p>
+                    <p class="parag">
+                        Aurélie Preston, Evy, Benjamin Samat, Anthony Matéo , Kevin, Sarah Van Elst.....Vous les avez aimé et vous les suivez dans
+                        <u>Zéro complexe</u>, <u>Les Marseilles</u>,
+                    </p>
+                    <p><u>Les Princes de l'amour</u>, <u>les Anges</u> et bien d'autres émission de <b>télé réalité</b>. Toutes ces stars du petit écran, du monde chatoyant de la télé réalité ont choisi Medespoir et la Clinique Medespoir pour faire leurs
+                        interventions de chirurgie esthétique. Medespoir est la clinique des
+                        <b>stars de la télé réalité</b>
+                    </p>
+                    <div style="padding : 25px 0px;">
+                        <a routerLink="/tele" class="btn">Visite téléréalité</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg">
+                <div class="wow fadeInUp">
+                    <iframe width="100%" height="362" src="https://www.youtube.com/embed/Y91TNIkbEAk"></iframe>
+                </div>
+                <br>
+            </div>
+            <br>
+        </div>
+        <!-- sixieme bloc -->
+        <center>
+            <div class="row justify-content-center">
+                <div class="col ">
+                    <div class="wow fadeInUp">
+                        <div class="card" style="width: 18rem;">
+                            <img class="card-img-top" src="https://www.la-chirurgieesthetique.com/wp-content/uploads/2019/11/chirurgie-visage-tunisie.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <p class="card-text">Chirurgie du Visage</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="wow fadeInUp">
+                        <div class="card" style="width: 18rem;">
+                            <img class="card-img-top" src="https://s.yimg.com/ny/api/res/1.2/C49hfnOB3cc3jIt_WXqCDg--~A/YXBwaWQ9aGlnaGxhbmRlcjtzbT0xO3c9ODAwO2lsPXBsYW5l/http://media.zenfs.com/fr_FR/Lifestyle/Femmeactuelle.fr/chirurgie-des-seins-les-nouvelles-methodes.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <p class="card-text">Chirurgie des Seins</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="wow fadeInUp">
+                        <div class="card" style="width: 18rem;">
+                            <img class="card-img-top" src="https://images.squarespace-cdn.com/content/v1/5807a33459cc68074db84268/1483440276964-2EY0WKB3FG5TBZGFR7MO/ke17ZwdGBToddI8pDm48kCpX2mwG9slVUzQCwhOMrQF7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z5QPOohDIaIeljMHgDF5CVlOqpeNLcJ80NK65_fV7S1UVDXM9yQ8sG6x3COIEUaadqpk9XPubC0H4MH9Az_c7nPqIjSxZ2rgD2_Fw9U6DWfsg/Docteur+Pierre+Moullot+Angouleme+Chirurgie+esthetique"
+                                alt="Card image cap">
+                            <div class="card-body">
+                                <p class="card-text">Chirurgie de la Silhouette</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="wow fadeInUp">
+                        <div class="card" style="width: 18rem;">
+                            <img class="card-img-top" src="https://www.medespoir.ca/wp-content/uploads/2018/04/medecine-esthetique-tunisie.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <p class="card-text">Médecine Esthétique</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-100">
+                    <div class="wow fadeInUp">
+                        <div class="jumbotron" style="background-color: rgb(238, 238, 238); border-radius:0%">
+                            <div class="text-center">
+                                <p class="hero">Devis en ligne Rapide et gratuit</p>
+                                <p class="lead">reduction sur toutes les opérations de chirurgie esthétique ! Pour en bénificier c'est simple,
+                                    <br>demandez votre devis <b>GRATUIT</b> et gagnez notre tirage au sort chaque mois</p>
+                                <button [routerLink]="['/devis']" class="btn-dark">Obtenir votre devis maintenant</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="wow fadeInUp">
+                        <div class="card" style="width: 18rem;">
+                            <img class="card-img-top" src="https://www.elsan.care/sites/default/files/inline-images/Chirurgie%20dentaire%20%28Personnalis%C3%A9%29.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <p class="card-text">Chirurgie dentaire</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="wow fadeInUp">
+                        <div class="card" style="width: 18rem;">
+                            <img class="card-img-top" src="https://www.tunisie-chirurgie.com/images/chirurgie-obesite-tunisie.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <p class="card-text">Chirurgie Obasite</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="wow fadeInUp">
+                        <div class="card" style="width: 18rem;">
+                            <img class="card-img-top" src="https://www.lesfurets.com/mutuelle-sante/guide/wp-content/uploads/sites/9/2016/01/fecondation-in-vitro-750x499.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <p class="card-text">Fécondation in vitro</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="wow fadeInUp">
+                        <div class="card" style="width: 18rem;">
+                            <img class="card-img-top" src="https://www.chirurgie-esthetique-pro.com/wp-content/uploads/2017/12/chirurgie-esthetique-homme.png" alt="Card image cap">
+                            <div class="card-body">
+                                <p class="card-text">Chirurgie Homme</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </center>
+        <!---->
+        <div class="centered-text">
+            <div class="wow fadeInUp">
+                <div class="row">
+                    <div class="col-lg">
+
+                        <i class="fas fa-notes-medical" style="font-size: 70px;"></i>
+                        <p class="parag" style="text-align: center;">
+                            Notre devise est la totale satisfaction des patients avant, au cours et après chaque intervention de chirurgie esthetique Tunisie.
+                        </p>
+
+                    </div>
+                    <div class="col-lg">
+
+                        <i class="fas fa-syringe" style="font-size: 70px;"></i>
+                        <p class="parag" style="text-align: center;">
+                            Liposuccion complète (toutes zones désirées) Toutes les normes d'asepsie et d'hygiène instaurées par l'Ordre National des Médecins en Tunisie sont respectées.
+                        </p>
+                    </div>
+                    <div class="col-lg">
+
+                        <i class="fas fa-user-md" style="font-size: 70px;"></i>
+                        <p class="parag" style="text-align: center;">
+                            Med Espoir Tunisie vous mettra en contact avec un médecin spécialiste tout au long de la période de convalescence.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!---->
+        <br>
+    </div>
+    <br>
+</div>

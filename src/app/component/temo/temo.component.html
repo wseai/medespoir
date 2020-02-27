@@ -1,0 +1,49 @@
+<!-- arriere plan -->
+<div class="bg">
+    <img src="../../../assets/image/media2.jpg" width="100%" alt="" />
+</div>
+
+<!-- contenu de la page -->
+<div class="contenu">
+    <br />
+    <br />
+    <br />
+    <div class="container-fluid">
+        <div class="row">
+            <!-- premier bloc -->
+            <div class="col-lg">
+                <div class="wow fadeIn">
+                    <iframe width="100%" height="362" src="https://www.youtube.com/embed/hv-xfIf5m2A">
+          </iframe>
+                </div>
+            </div>
+            <div class="col-lg">
+                <div class="wow fadeIn">
+                    <p class="titre">
+                        Chirurgie esthetique Tunisie :<br /> Le témoignage de David en video
+                    </p>
+                    <hr style="width: 70%;" />
+                    <p class="parag">
+                        David vient de Tours en France. Après une grosse perte de poids, il a souhaité se débarrasser de graisses dominantes, remettre en tension ses abdominaux et en finir avec le complexe de mamelons développés. Il a donc demandé à la Clinique Medespoir et
+                        au docteur Abdi de le prendre en charge pour réaliser une liposuccion, une abdominoplastie et une gynécomastie. <br /><a routerLink="/"><b>Medespoir TV</b></a> vous representer son témoignage en video
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- deuxieme bloc -->
+
+    <div class="wow fadeIn">
+        <hr />
+        <p class="titre" style="text-align: center;">
+            temoignages<br />patients discutent leur experiences
+        </p>
+    </div>
+</div>
+<br>
+
+<div id="row" class="row justify-content-md-center">
+    <div class="col-sm-auto" *ngFor="let video of videos">
+        <iframe class="wow fadeInUp" width="460" height="260" [src]="video.lien | sanitizer"></iframe>
+    </div>
+</div>

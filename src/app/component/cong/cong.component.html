@@ -1,0 +1,41 @@
+<div class="jumbotron">
+</div>
+
+<div class="container">
+    <div class="form-row">
+        <div class="col-8">
+            <div class="form-group">
+                <input id="search" type="text" [(ngModel)]="searchText" class="form-control" id="search" placeholder="Ecrire nom de patient" />
+            </div>
+        </div>
+        <div class="col-4">
+            <button class="btn btn-dark" (click)="exportexcel()">
+            telecharger <i class="fas fa-download"></i>
+          </button>
+        </div>
+    </div>
+</div>
+<table id="excel-table" class="table">
+    <thead class="thead-dark">
+        <tr>
+            <th *ngFor="let head of headElements" scope="col">
+                {{head}}
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr class="table-line" *ngFor="let patient of patients | async | search: {firstName: searchText, lastName:searchText, cin:searchText};">
+            <td>{{patient.cin}}</td>
+            <td>{{patient.firstName}}</td>
+            <td>{{patient.lastName}}</td>
+            <td>{{patient.age}}</td>
+            <td>{{patient.email}}</td>
+            <td>{{patient.telef}}</td>
+            <td>
+                <a class="btn" (click)="deleteOrder()">
+                    <i class="fas fa-trash"></i>
+                </a>
+            </td>
+        </tr>
+    </tbody>
+</table>
